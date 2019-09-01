@@ -2,6 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//formas de definir;
+//{name}:{name:string}
+//(props:{name:string}
+
+//interfaces
+interface HelloProps{
+  name?: string;
+}
+
+function Hello({name}:HelloProps){
+  return <div>Hello {name}</div>
+}
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -10,6 +23,7 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Hello name="Adrian hernandez"/>
         <a
           className="App-link"
           href="https://reactjs.org"
