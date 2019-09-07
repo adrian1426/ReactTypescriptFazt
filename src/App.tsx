@@ -1,40 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
 
-//formas de definir;
-//{name}:{name:string}
-//(props:{name:string}
-
-//interfaces
-interface HelloProps{
-  name?: string;
-}
-
-function Hello({name}:HelloProps){
-  return <div>Hello {name}</div>
-}
-
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Hello name="Adrian hernandez react typescript"/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component<any,any>{
+  render(){
+    return(
+      <h1>{this.props.title}</h1>
+    );
+  }
 }
 
 export default App;
