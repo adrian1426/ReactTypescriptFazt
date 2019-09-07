@@ -23,7 +23,7 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <Hello name="Adrian hernandez"/>
+        <Hello name="Adrian hernandez react typescript"/>
         <a
           className="App-link"
           href="https://reactjs.org"
